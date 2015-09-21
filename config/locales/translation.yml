@@ -1,0 +1,18 @@
+en:
+  plugin:
+    media_aws_s3:
+      settings:
+        title: 'S3 Settings'
+        bucket: 'Bucket name'
+        cdn_base_path: 'CDN Base path URL'
+      messages:
+        settings_saved: 'Settings saved!'
+es:
+  plugin:
+    media_aws_s3:
+      settings:
+        title: 'Configuración de S3'
+        bucket: 'Nombre del bucket'
+        cd_base_path: 'URL base para el CDN'
+      messages:
+        settings_saved: '¡Preferencias guardadas!'
