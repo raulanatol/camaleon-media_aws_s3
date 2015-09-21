@@ -7,12 +7,12 @@ class Plugins::MediaAwsS3::Models::MediaFilesSearchCache < ActiveRecord::Base
 
   def self.find_by_query query
     Plugins::MediaAwsS3::Models::MediaFilesSearchCache.find_by (
-                                                                 {:bucket => query[:bucket],
-                                                                  :delimiter => query[:delimiter],
-                                                                  :encoding_type => query[:encoding_type],
-                                                                  :max_keys => query[:max_keys],
-                                                                  :prefix => query[:prefix]
-                                                                 }
+                                                                   {:bucket => query[:bucket],
+                                                                    :delimiter => query[:delimiter],
+                                                                    :encoding_type => query[:encoding_type],
+                                                                    :max_keys => query[:max_keys],
+                                                                    :prefix => query[:prefix]
+                                                                   }
                                                                )
   end
 
@@ -43,7 +43,6 @@ class Plugins::MediaAwsS3::Models::MediaFilesSearchCache < ActiveRecord::Base
   def getting_from_cache
     return @getting_from_cache_value
   end
-
 
 
   private
